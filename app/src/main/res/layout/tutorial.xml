@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundplain"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".Tutorial">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/apple"
+            android:maxHeight="40dp"
+            android:maxWidth="40dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/Tu1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Control the fruit with the tilt of the device so that it falls into the basket."
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="40dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:src="@drawable/basket"
+        android:layout_gravity="left">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/obstacle"
+            android:maxHeight="40dp"
+            android:maxWidth="40dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/Tu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avoid the black squares."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="40dp"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:paddingHorizontal="20dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/coin"
+            android:maxHeight="40dp"
+            android:maxWidth="40dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/Tu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aditionally, you can collect coins in order to buy different backgrounds from the shop."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="40dp"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Tu4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There are six levels in total, each with an increasing number of obstacles compared to the previous level."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="40dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/Tu5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The higher the level you complete, the higher the maximum score you can obtain will be."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="40dp"
+        android:textSize="20dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:src="@drawable/backbutton"
+        app:maxImageSize="70dp"
+        android:clickable="true"
+        android:onClick="clickBackTutorial"
+        />
+
+</LinearLayout>
+

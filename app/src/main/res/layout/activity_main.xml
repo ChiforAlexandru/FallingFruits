@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundplain"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:weightSum="8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Falling Fruits"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="2"
+        />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:clickable="true"
+        android:onClick="clickMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_weight="1"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <Button
+        android:id="@+id/highscores"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Highscores"
+        android:clickable="true"
+        android:onClick="clickMain"
+        android:layout_weight="1"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <Button
+        android:id="@+id/shop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Shop"
+        android:clickable="true"
+        android:onClick="clickMain"
+        android:layout_weight="1"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <Button
+        android:id="@+id/tutorial"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tutorial"
+        android:clickable="true"
+        android:onClick="clickMain"
+        android:layout_weight="1"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:onClick="clickExit"
+        android:src="@drawable/backbutton"
+        app:fabCustomSize="50dp"
+        app:maxImageSize="70dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
